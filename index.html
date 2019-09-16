@@ -4,9 +4,43 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<h1> hello world</h1>
-	<div src="https://192.168.50.218">
-		
+	<div class="header-container">
+		<img class="logo" src="media/Octo-Logo.png"></img>
+		<p class="header-text">OctoPrint Clients</p>	
+	</div>
+	
+	</br>
+	
+	<div class="master-master-container">
+	
+	<div class="body-header">
+		<p>Avalable OctoPrint's</p>
+	</div>
+	
+	<div class="webcam-container">
+	<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://192.168.50.218/webcam/?action=stream&amp;1568545528643">
+	</div>
+			<div class="button-container">
+				<a class="button" href="http://50.82.52.254:26656">
+				OctoPrint 1
+				</a>
+			</div>
+	<div class="webcam-container">
+	<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://192.168.50.218/webcam/?action=stream&amp;1568545528643">
+	</div>
+			<div class="button-container">
+				<a class="button" href="http://50.82.52.254:26656">
+				OctoPrint 2
+				</a>
+			</div>
+	<div class="webcam-container">
+	<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://192.168.50.218/webcam/?action=stream&amp;1568545528643">
+	</div>
+			<div class="button-container">
+				<a class="button" href="http://50.82.52.254:26656">
+				OctoPrint 3
+				</a>
+			</div>
 	</div>
 </body>
 </html>
