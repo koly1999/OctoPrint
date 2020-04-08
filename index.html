@@ -1,31 +1,25 @@
 <!DOCKTYPE html>
 <html lang="en">
+<meta charset="utf-8">
+<link rel="shortcut icon" href="media/favicon.png">
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="header-container">
 		<img class="logo" src="media/Octo-Logo.png"></img>
-			<div class="wrapper">
-				<a class="login-button" href="">
-					Login
+			
+			<div class="page-button-wrapper">
+				<a class="page-button" href="stl-viewer-prototype.html">
+					STL Viewer
 				</a>
 			</div>
+			
 		<p class="header-text">OctoPrint Clients</p>	
 	</div>
 	
 	</br>
-	
-	<div class="button-container">
-				<ul>
-					<a class="button" href="index.html">
-					Home page
-					</a>
-					<a class="button" href="stl-viewer-prototype.html">
-					STL Viewer
-					</a>
-				</ul>
-	</div>
+	</br>
 	
 	<div class="master-master-container">
 	
@@ -34,37 +28,57 @@
 	</div>
 	
 	<div class="webcam-container">
-	<p class="webcam-name">Octoprint 1</p>
-	<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://173.29.112.222:26656/webcam/?action=stream&amp;1568545528643">
-	</div>
-	
 			<div class="button-container">
-				<a class="button" href="http://173.29.112.222:26656">
+				<a class="button" href="http://printerzone.duckdns.org:8001/">
 				OctoPrint 1
 				</a>
 			</div>
-			
-	<div class="webcam-container">
-	<p class="webcam-name">Octoprint 2</p>
-	<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://173.29.112.222:26656/webcam/?action=stream&amp;1568545528643">
-	</div>
+	<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://printerzone.duckdns.org:8001/webcam/?action=stream&1586035433643">
 	
 			<div class="button-container">
-				<a class="button" href="http://50.82.52.254:26656">
+				<a class="share-button" href="octoprint1.html">
+				<img src="media/share-symbol.png" href="octoprint1.html">
+				Share Live Feed
+				</a>
+			</div>
+	</div>
+
+			</br>
+		
+	<div class="webcam-container">
+			<div class="button-container">
+				<a class="button" href="http://printerzone.duckdns.org:8002/">
 				OctoPrint 2
 				</a>
 			</div>
-			
-	<div class="webcam-container">
-	<p class="webcam-name">Octoprint 3</p>
-	<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://173.29.112.222:26656/webcam/?action=stream&amp;1568545528643">
-	</div>
+	<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://printerzone.duckdns.org:8002/webcam/?action=stream&1586037099228">
 	
 			<div class="button-container">
-				<a class="button" href="http://50.82.52.254:26656">
+				<a class="share-button" href="octoprint2.html">
+				<img src="media/share-symbol.png" href="octoprint2.html">
+				Share Live Feed
+				</a>
+			</div>
+	</div>
+		
+			</br>
+		
+	<div class="webcam-container">
+			<div class="button-container">
+				<a class="share-button" href="http://printerzone.duckdns.org:8003/">
 				OctoPrint 3
 				</a>
 			</div>
+		<img src="media/alt-video.png">
+<!--	<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://printerzone.duckdns.org:8003/webcam/?action=stream&1586037157768">
+-->				
+			<div class="button-container">
+				<a class="share-button" href="octoprint3.html">
+				<img src="media/share-symbol.png" href="octoprint3.html">
+				Share Live Feed
+				</a>
+			</div>
+	</div>
 			
 	</div>
 </body>

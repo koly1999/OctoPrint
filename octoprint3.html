@@ -15,28 +15,21 @@
 				</a>
 			</div>
 			
-		<p class="header-text">OctoPrint Clients</p>
-		
+		<p class="header-text">OctoPrint Clients</p>	
 	</div>
 	
 	</br>
-	</br>
-	
 	</br>
 	
 	<div class="master-master-container">
 	
-		<div class="body-header">
-			<p>STL File Viewer</p>
-		</div>
-	
-	<div class="viewer-contianer">
-	<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&color=gray&bgcolor=white" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+	<div class="body-header">
+		<p>OctoPrint 3 Live Feed</p>
 	</div>
 	
-	<p class="stl-text">
-	Upload, or drag and drop your STL file to see a preview of the part you wish to 3d Print. Color customiser, material selector, and part statistics coming soon!
-	</p>
+	<div class="webcam-contianer">
+			<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://printerzone.duckdns.org:8003/webcam/?action=stream&1586037157768">	
+	</div>
 	
 	</div>
 	

@@ -26,6 +26,37 @@ body{
 	height:45px;
 }
 
+.page-button-wrapper{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.page-button{
+	float:right;
+	display:inline;
+	margin-top: 7px;
+	margin-right: 7px;
+	margin-left: 3px;
+	margin-right: 7px;
+	text-align: center;
+	Padding: 5px;
+	background-color: #656b76;
+	color: #dadadc;
+	border: 1px solid hsla(0,0%,100%,.3);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.page-button:hover{
+	text-decoration:none;
+	text-align: center;
+	Padding: 5px;
+	background-color: #36393f;
+	color: #dadadc;
+	display: inline;
+	border: 1px solid hsla(0,0%,100%,.3);
+}
+
 a{
 	padding-left:5px;
 	padding-right:5px;
@@ -39,27 +70,22 @@ a{
 }
 
 .button-container{
+	display: block;
 	text-align: center;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top: 15px;
-	margin-bottom:15px;
 }
 
 .button{
-	margin-left: 3px;
-	margin-right: 3px;
+	display: block;
+	font-size:25px;
+	border: 3px solid hsla(0,0%,100%,.3);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color:#dadadc;
 	text-align: center;
 	Padding: 5px;
 	background-color: #656b76;
 	color: #dadadc;
-	display: inline;
-	border-radius: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-	border: 1px solid hsla(0,0%,100%,.3);
 }
 
 .button:hover{
@@ -68,44 +94,28 @@ a{
 	Padding: 5px;
 	background-color: #36393f;
 	color: #dadadc;
-	display: inline;
-	border-radius: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-	border: 1px solid hsla(0,0%,100%,.3);
 }
 
-.login-button{
-	margin-left: 3px;
-	margin-right: 3px;
+.share-button{
+	display: block;
+	font-size:25px;
+	border: 3px solid hsla(0,0%,100%,.3);
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	color:#dadadc;
 	text-align: center;
 	Padding: 5px;
 	background-color: #656b76;
 	color: #dadadc;
-	display: inline;
-	border-radius: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-	border: 1px solid hsla(0,0%,100%,.3);
 }
 
-.login-button:hover{
+.share-button:hover{
 	text-decoration:none;
 	text-align: center;
 	Padding: 5px;
 	background-color: #36393f;
 	color: #dadadc;
-	display: inline;
-	border-radius: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-	border: 1px solid hsla(0,0%,100%,.3);
 }
 
 a:link {
@@ -156,12 +166,19 @@ a:active {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	width:640px ;
-	height:517px;
-	border-radius: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
+	height:567px;
+	border: 3px solid hsla(0,0%,100%,.3);
+	background-color:#656b76;
+}
+
+.webcam-container-share{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width:640px ;
+	height:480px;
 	border: 3px solid hsla(0,0%,100%,.3);
 	background-color:#656b76;
 }
@@ -172,11 +189,6 @@ a:active {
 	width: 768px;
 	height: 432px;
 	background-color: white;
-	border-radius: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
 	border: 3px solid hsla(0,0%,100%,.3);
 	background-color:#656b76;
 }
@@ -192,3 +204,16 @@ a:active {
 	color:#dadadc;
 }
 
+.flat-progressbar{
+	height: 10px;
+}
+
+.console{
+	height: 480px;
+}
+
+.form-control::-webkit-input-placeholder { opacity: 0.4; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { opacity: 0.4; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { opacity: 0.4; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { opacity: 0.4; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { opacity: 0.4; }  /* Microsoft Edge */
