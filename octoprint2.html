@@ -2,6 +2,15 @@
 <html lang="en">
 <meta charset="utf-8">
 <link rel="shortcut icon" href="media/favicon.png">
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied shareable link: " + copyText.value);
+}
+</script>
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
