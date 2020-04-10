@@ -2,8 +2,18 @@
 <html lang="en">
 <meta charset="utf-8">
 <link rel="shortcut icon" href="media/favicon.png">
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied shareable link: " + copyText.value);
+}
+</script>
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
 	<div class="header-container">
@@ -31,6 +41,21 @@
 			<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://printerzone.duckdns.org:8001/webcam/?action=stream&1586035433643">	
 	</div>
 	
+		<input type='text' class="link" value='https://koly1999.github.io/OctoPrint/octoprint1.html' id="myInput"/>
+		
+			<div class="button-container">
+					<a href="#" onclick="myFunction()" class="feed-share-button">
+					<img onclick="myFunction()" class="share-image-button" class="share-image-button" src="media/share-symbol.png">
+					Share Live Feed
+					</a>
+			</div>
+	
+	</div>
+
+	<div class="footer">
+		<p class="stl-text">
+	Website designed By Luke Morrison, this site is used to remotley control and monitor 3D printers, as well as to preview STL files. Contact me at:  <b>koly1999@gmail.com</b>
+		</p>
 	</div>
 	
 </body>

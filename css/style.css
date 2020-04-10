@@ -97,6 +97,7 @@ a{
 }
 
 .share-button{
+	vertical-align: middle;
 	display: block;
 	font-size:25px;
 	border: 3px solid hsla(0,0%,100%,.3);
@@ -116,6 +117,33 @@ a{
 	Padding: 5px;
 	background-color: #36393f;
 	color: #dadadc;
+}
+
+.feed-share-button{
+	margin-left: auto;
+	margin-right: auto;
+	width: 280px;
+	vertical-align: middle;
+	display: block;
+	font-size:23px;
+	border: 3px solid hsla(0,0%,100%,.3);
+	color:#dadadc;
+	text-align: center;
+	Padding: 5px;
+	background-color: #656b76;
+	color: #dadadc;
+}
+
+.feed-share-button:hover{
+	text-decoration:none;
+	text-align: center;
+	Padding: 5px;
+	background-color: #36393f;
+	color: #dadadc;
+}
+
+.share-image-button{
+	vertical-align:middle;
 }
 
 a:link {
@@ -193,11 +221,15 @@ a:active {
 	background-color:#656b76;
 }
 
-.login-button{
-	float:right;
-	display:inline;
-	margin-top: 7px;
-	margin-right: 7px;
+input{
+	
+	width:340px;
+	margin-bottom: 10px;
+	margin-top: 5px;	
+}
+
+.footer{
+	text-align: center;
 }
 
 .stl-text{
