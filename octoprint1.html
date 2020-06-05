@@ -1,62 +1,172 @@
-<!DOCKTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-<link rel="shortcut icon" href="media/favicon.png">
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied shareable link: " + copyText.value);
-}
-</script>
 <head>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css\style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <script>
+  function myFunction() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Copied shareable link: " + copyText.value);
+  }
+  </script>
 
 </head>
-<body>
-	<div class="header-container">
-		<img class="logo" src="media/Octo-Logo.png"></img>
-			
-			<div class="page-button-wrapper">
-				<a class="page-button" href="index.html">
-					OctoPrint Clients
-				</a>
-			</div>
-			
-		<p class="header-text">OctoPrint Clients</p>	
-	</div>
-	
-	</br>
-	</br>
-	
-	<div class="master-master-container">
-	
-	<div class="body-header">
-		<p>OctoPrint 1 Live Feed</p>
-	</div>
-	
-	<div class="webcam-container-share">
-			<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://printerzone.duckdns.org:8001/webcam/?action=stream&1586035433643">	
-	</div>
-	
-		<input type='text' class="link" value='https://koly1999.github.io/OctoPrint/octoprint1.html' id="myInput"/>
-		
-			<div class="button-container">
-					<a href="#" onclick="myFunction()" class="feed-share-button">
-					<img onclick="myFunction()" class="share-image-button" class="share-image-button" src="media/share-symbol.png">
-					Share Live Feed
-					</a>
-			</div>
-	
-	</div>
 
-	<div class="footer">
-		<p class="stl-text">
-	Website designed By Luke Morrison, this site is used to remotley control and monitor 3D printers, as well as to preview STL files. Contact me at:  <b>koly1999@gmail.com</b>
-		</p>
-	</div>
-	
+<body>
+
+  <nav class="navbar">
+    <ul class="navbar-nav">
+
+      <li class="logo">
+        <a href="index.html" class="nav-link">
+          <span class="link-text logo-text">Print Hub</span>
+            <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="fighter-jet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-fighter-jet fa-w-20 fa-3x">
+              <g class="fa-group">
+                <path fill="currentColor" d="M168 192h176L227.16 44h39.51c11.66 0 21.33-2.62 21.33-6s-9.67-6-21.33-6H152v12h16zm0 128v148h-16v12h114.67c11.66 0 21.33-2.62 21.33-6s-9.67-6-21.33-6h-39.51L344 320z" class="fa-secondary">
+                </path>
+                <path fill="currentColor" d="M640 256c0 5.42 0 10.67-96 32l-128 16-48 16H106.67l-53.34 64H18.67L8 373.33V304h8v-16h48v-2.67l-64-8v-42.66l64-8V224H16v-16H8v-69.33L18.67 128h34.66l53.34 64H368l48 16 128 16c96 21.33 96 26.58 96 32z" class="fa-primary">
+                </path>
+              </g>
+            </svg>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="octoprint1.html" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="cube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cube fa-w-16 fa-3x">
+            <g class="fa-group">
+              <path fill="currentColor" d="M480.85 85.58l-208-78a47.17 47.17 0 0 0-33.7-.1l-208 78a48.06 48.06 0 0 0-31.1 45v225.1a48 48 0 0 0 26.5 42.9l208 104a47.66 47.66 0 0 0 42.9 0l208-104a47.91 47.91 0 0 0 26.5-42.9v-225.1a47.93 47.93 0 0 0-31.1-44.9zM448 345.16l-160 80v-148.9l160-65zm.05-202.48l-192 78-192-78v-1.1l192-72 192 72z" class="fa-secondary">
+              </path>
+              <path fill="currentColor" d="M448 345.16l-160 80v-148.9l160-65z" class="fa-primary">
+              </path>
+            </g>
+          </svg>
+          <span class="link-text">3D Printer 1</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="octoprint2.html" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="cube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cube fa-w-16 fa-3x">
+            <g class="fa-group">
+              <path fill="currentColor" d="M480.85 85.58l-208-78a47.17 47.17 0 0 0-33.7-.1l-208 78a48.06 48.06 0 0 0-31.1 45v225.1a48 48 0 0 0 26.5 42.9l208 104a47.66 47.66 0 0 0 42.9 0l208-104a47.91 47.91 0 0 0 26.5-42.9v-225.1a47.93 47.93 0 0 0-31.1-44.9zM448 345.16l-160 80v-148.9l160-65zm.05-202.48l-192 78-192-78v-1.1l192-72 192 72z" class="fa-secondary">
+              </path>
+              <path fill="currentColor" d="M448 345.16l-160 80v-148.9l160-65z" class="fa-primary">
+              </path>
+            </g>
+          </svg>
+          <span class="link-text">3D Printer 2</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="octoprint3.html" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="cube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cube fa-w-16 fa-3x">
+            <g class="fa-group">
+              <path fill="currentColor" d="M480.85 85.58l-208-78a47.17 47.17 0 0 0-33.7-.1l-208 78a48.06 48.06 0 0 0-31.1 45v225.1a48 48 0 0 0 26.5 42.9l208 104a47.66 47.66 0 0 0 42.9 0l208-104a47.91 47.91 0 0 0 26.5-42.9v-225.1a47.93 47.93 0 0 0-31.1-44.9zM448 345.16l-160 80v-148.9l160-65zm.05-202.48l-192 78-192-78v-1.1l192-72 192 72z" class="fa-secondary">
+              </path>
+              <path fill="currentColor" d="M448 345.16l-160 80v-148.9l160-65z" class="fa-primary">
+              </path>
+            </g>
+          </svg>
+          <span class="link-text">3D Printer 3</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="stl-viewer.html" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="telescope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-telescope fa-w-20 fa-3x">
+            <g class="fa-group">
+              <path fill="currentColor" d="M263.3594,347.79914,136.3008,391.44163c-8.7539,3.00781-18.05078-.69335-21.26953-8.46678l-8.74219-21.10738L42.17971,388.42211A15.99837,15.99837,0,0,1,21.27737,379.762L1.21877,331.34018a16.00653,16.00653,0,0,1,8.66406-20.90425L73.9844,283.88129,65.24221,262.772c-3.21875-7.77342.73828-16.96481,9.05469-21.02925L380.4219,92.1336l78.125,188.62074-66.60157,22.87691a71.98089,71.98089,0,0,0-143.96093.36914A71.08619,71.08619,0,0,0,263.3594,347.79914Z" class="fa-secondary">
+              </path>
+              <path fill="currentColor" d="M638.77737,216.83064,553.06252,9.88181a15.99836,15.99836,0,0,0-20.90234-8.66014L414.84377,49.81923a15.99639,15.99639,0,0,0-8.65625,20.90426l85.71094,206.94883a16.00274,16.00274,0,0,0,20.90625,8.66014l117.3125-48.59757A15.99819,15.99819,0,0,0,638.77737,216.83064ZM376.13283,348.50812a71.27481,71.27481,0,0,0,15.85157-44.50773,72,72,0,0,0-144,0,71.27859,71.27859,0,0,0,15.87109,44.53507l-47.46484,142.404A16.00061,16.00061,0,0,0,231.57033,512h16.85938a16.00416,16.00416,0,0,0,15.17969-10.94139l42.16406-126.49585a71.05048,71.05048,0,0,0,28.44922-.002l42.168,126.4978A16.00046,16.00046,0,0,0,391.57033,512h16.85938a16.00062,16.00062,0,0,0,15.17969-21.06051ZM319.9844,328.00035a24,24,0,1,1,24-24A24.03627,24.03627,0,0,1,319.9844,328.00035Z" class="fa-primary">
+              </path>
+            </g>
+          </svg>
+          <span class="link-text">STL File Viewer</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+<main>
+	<!-- Page Header -->
+	<h1 class="logo-header">Print Hub</h1>
+	<!-- Page Information -->
+
+	<hr>
+
+  <div class="livestream-container">
+
+    <ul class = "share-link-container">
+        <li class="share-item">
+          <a href="http://printerzone.duckdns.org:8001/" target="_blank" class="share-link">
+            <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="cube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cube fa-w-16 fa-3x">
+              <g class="fa-group">
+                <path fill="currentColor" d="M480.85 85.58l-208-78a47.17 47.17 0 0 0-33.7-.1l-208 78a48.06 48.06 0 0 0-31.1 45v225.1a48 48 0 0 0 26.5 42.9l208 104a47.66 47.66 0 0 0 42.9 0l208-104a47.91 47.91 0 0 0 26.5-42.9v-225.1a47.93 47.93 0 0 0-31.1-44.9zM448 345.16l-160 80v-148.9l160-65zm.05-202.48l-192 78-192-78v-1.1l192-72 192 72z" class="fa-secondary">
+                </path>
+                <path fill="currentColor" d="M448 345.16l-160 80v-148.9l160-65z" class="fa-primary">
+                </path>
+              </g>
+            </svg>
+           <span class="share-link-text">Go To Octoprint 1</span>
+        </a>
+      </li>
+
+    </ul>
+
+            </br>
+
+    <div class="webcam-container">
+  			<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(),
+					flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()"
+					src="http://printerzone.duckdns.org:8001/webcam/?action=stream&1586035433643">
+				</img>
+  	</div>
+
+            </br>
+
+        <ul class = "share-link-container">
+
+          <li class="share-item">
+                <input type='text' class="link-input" value='https://koly1999.github.io/OctoPrint/octoprint1.html' id="myInput"/>
+          </li>
+
+          <li class="share-item">
+            <a href="#" onclick="myFunction()" class="share-link">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="satellite-dish" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-satellite-dish fa-w-16 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor" d="M224.03705,256.18768a32.003,32.003,0,0,0-32.00489,32.00119c0,2.80009.90013,5.20021,1.60025,7.80028l-27.40418,27.401L188.83168,346.041l27.40418-27.401c2.6004.7,5.00076,1.60007,7.80119,1.60007a32.0012,32.0012,0,1,0,0-64.00239Zm287.944,46.85175C503.47977,139.88336,372.25973,8.67846,209.03476.02814a16.0818,16.0818,0,0,0-16.99755,15.11031l-.005.09026V47.65992a15.85138,15.85138,0,0,0,15.00229,15.90059c129.41978,7.00026,233.43569,112.00417,240.93683,241.509a16.00167,16.00167,0,0,0,15.90243,15.00056h32.10491a16.12153,16.12153,0,0,0,16.00245-16.1806A4.82409,4.82409,0,0,0,511.98107,303.03943ZM209.33481,96.03172a16.12184,16.12184,0,0,0-17.25227,14.90555l-.00037.005c0,.4-.05.79-.05,1.19v32.10121a15.94134,15.94134,0,0,0,14.80227,15.90058c76.81174,6.30024,138.02108,68.20254,144.92216,145.2054A16.08172,16.08172,0,0,0,367.659,320.04007H399.864a16.19152,16.19152,0,0,0,16.14248-16.24045l0-.01016v-1C407.56511,192.68531,319.45163,104.582,209.33481,96.03172Z" class="fa-secondary">
+                  </path>
+                  <path fill="currentColor" d="M302.449,487.5963C224.73716,529.39784,125.722,517.49744,60.112,451.895s-77.51184-164.50613-35.70545-242.309c4.90074-9.10034,17.7027-10.30038,25.00382-3.00011L305.44949,462.59537C312.85062,469.89562,311.65045,482.69612,302.449,487.5963Z" class="fa-primary">
+                  </path>
+                </g>
+              </svg>
+             <span class="share-link-text">Share Live Feed</span>
+          </a>
+        </li>
+      </ul>
+
+</div>
+
+<hr>
+
+<footer>
+
+  <p>
+    Website designed By Luke Morrison, this site is used to remotley control and monitor 3D printers. Contact me at: <strong>koly1999@gmail.com</strong>
+  </p>
+
+</footer>
+
+</main>
+
 </body>
+
 </html>

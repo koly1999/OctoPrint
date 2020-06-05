@@ -3,6 +3,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css\style.css">
+	<script src="js\stl-viewer\stl_viewer.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
@@ -13,8 +14,8 @@
 		<ul class="navbar-nav">
 
 			<li class="logo">
-        <a href="index.html" class="nav-link">
-          <span class="link-text logo-text">Print Hub</span>
+				<a href="index.html" class="nav-link">
+					<span class="link-text logo-text">Print Hub</span>
 						<svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="fighter-jet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-fighter-jet fa-w-20 fa-3x">
 							<g class="fa-group">
 								<path fill="currentColor" d="M168 192h176L227.16 44h39.51c11.66 0 21.33-2.62 21.33-6s-9.67-6-21.33-6H152v12h16zm0 128v148h-16v12h114.67c11.66 0 21.33-2.62 21.33-6s-9.67-6-21.33-6h-39.51L344 320z" class="fa-secondary">
@@ -23,8 +24,8 @@
 								</path>
 							</g>
 						</svg>
-        </a>
-      </li>
+				</a>
+			</li>
 
 			<li class="nav-item">
 				<a href="octoprint1.html" class="nav-link">
@@ -87,32 +88,25 @@
 
 <main>
 	<!-- Page Header -->
-	<h1 class="logo-header">Print Hub</h1>
+ 	<h1 class="logo-header">Print Hub</h1>
 	<!-- Page Information -->
+	<hr>
+
+		<div>
+		<h3>STL File Viewer</h3>
+		<div>
+
+	<div class="viewer-contianer">
+	<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&color=gray&bgcolor=white" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+	</div>
+
 	<p>
-		This is a Hub for all of the 3D printers in operation. On this site you can view currently running printers, as well as upload new jobs for the printers to complete.
+	Upload, or drag and drop your STL file to see a preview of the part you wish to 3d Print. Color customiser, material selector, and part statistics coming soon!
 	</p>
 
 	<hr>
 
-	<div class="webcam-container">
-			<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(),
-				flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()"
-				src="http://printerzone.duckdns.org:8001/webcam/?action=stream&1586035433643">
-			</img>
 	</div>
-
-	<div class="webcam-container">
-			<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://printerzone.duckdns.org:8002/webcam/?action=stream&1586037099228">
-	</div>
-
-	<div class="webcam-container">
-			<img class="webcam_image" data-bind="css: { flipH: settings.webcam_flipH(), flipV: settings.webcam_flipV() }, event: { load: onWebcamLoaded, error: onWebcamErrored }, visible: !webcamError()" src="http://printerzone.duckdns.org:8003/webcam/?action=stream&1586037157768">
-	</div>
-
-	<br/>
-
-		<hr>
 
 	<footer>
 
